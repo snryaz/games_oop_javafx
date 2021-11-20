@@ -25,7 +25,7 @@ public final class Logic {
         boolean freeCell = true;
         for (int i = 0; i < steps.length; i++) {
             for (int j = 0; j < figures.length; j++) {
-                if(figures[j] != null && figures[j].position() == steps[i]) {
+                if (figures[j] != null && figures[j].position() == steps[i]) {
                     freeCell = false;
                     if (!freeCell) {
                         throw new OccupiedCellException();
