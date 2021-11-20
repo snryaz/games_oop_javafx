@@ -100,8 +100,7 @@ public final class Chess extends Application {
         control.setAlignment(Pos.BASELINE_CENTER);
         Button start = new Button("Начать");
         start.setOnMouseClicked(
-                event -> refresh(border)
-        );
+                event -> refresh(border));
         control.getChildren().addAll(start);
         border.setBottom(control);
         border.setCenter(buildGrid());
